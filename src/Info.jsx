@@ -6,7 +6,7 @@ function Info() {
     const [userData , setUserData ] = useState({})
     const navigate = useNavigate()
     useEffect(()=>{
-        let data = localStorage.getItem('userData')
+        let data = sessionStorage.getItem('userData')
         data = JSON.parse(data)
         console.log(data)
         setUserData(data)

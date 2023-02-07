@@ -15,8 +15,8 @@ export default function Main(){
     const navigate = useNavigate()
   
     useEffect(() => {
-        if(localStorage.hasOwnProperty("userData")){
-            let data = localStorage.getItem('userData')
+        if(sessionStorage.hasOwnProperty("userData")){
+            let data = sessionStorage.getItem('userData')
             data = JSON.parse(data)
             setSectors(data.sectors)
             setFullname(data.name)
@@ -65,7 +65,7 @@ export default function Main(){
     //       setError(error.message)
     //    })
        
-       localStorage.setItem('userData', data)
+      sessionStorage.setItem('userData', data)
 
        navigate('/info') 
     }

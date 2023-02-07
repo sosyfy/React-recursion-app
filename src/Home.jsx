@@ -42,8 +42,9 @@ export default function Main(){
   
     const handleSubmit = ( event )=>{
        event.preventDefault()
-    
-  
+       if ( sectors.length < 1 ){
+        return  setError("Select a sector to proceed")
+       }  
        let data = JSON.stringify({
           name: fullname,
           sectors: sectors,

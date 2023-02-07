@@ -1,0 +1,197 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: #1a1f36;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
+}
+
+
+
+h1 {
+  letter-spacing: -1px;
+}
+
+strong {
+  color: red;
+ 
+}
+
+.main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0 auto;
+  background: linear-gradient(4deg, lightblue, dodgerblue);
+}
+
+.section-wrapper {
+  position: relative;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 10px;
+  max-width: 50rem;
+  margin: 0 5rem;
+}
+
+.heading {
+  font-size: 2em;
+  border-bottom: 1px solid dodgerblue;
+  padding: 10px;
+  color: dodgerblue;
+  letter-spacing: 1px;
+  /* margin-bottom: 60px; */
+  font-weight: bold;
+  padding-left: 10px;
+}
+
+.sub-heading {
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: gray;
+  font-weight: 600;
+
+}
+
+.name-field {
+   display: grid;
+   position: relative;
+   padding: 1rem 0 ;
+}
+
+.name-field input {
+  width: 100%;
+  border: 2px solid dodgerblue;
+  outline: none;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+.name-field span {
+  font-size: 1em;
+  transition: 0.6s;
+  font-family: sans-serif;
+  color: dodgerblue;
+}
+
+/* .name-field input:focus ~ span,
+.name-field input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1em;
+} */
+
+.sectors-field-wrapper  h1 {
+   font-size: 1rem;
+   font-weight: 500;
+   color: dodgerblue;
+   padding-bottom: 1rem;
+}
+
+
+.sectors-field {
+  max-height: 10rem;
+  overflow-y: scroll;
+  border: 1px solid dodgerblue;
+  padding: 1rem;
+}
+
+.option-label {
+  font-size: medium;
+  color: dodgerblue;
+  padding: 0.3em 0;
+  cursor: pointer;
+}
+
+.option-checkbox {
+  display: flex;
+  align-items: center;
+  padding: o.4em 0 ;
+}
+
+.option-checkbox input {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px; 
+  box-shadow: unset;
+  min-height: unset;
+}
+.option-checkbox label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+
+.terms-field {
+   display: flex;
+   align-items: center;
+   padding: 1rem 0;
+}
+
+.terms-field input {
+  width: 20px;
+  height: 15px;
+  margin-right: 5px; 
+  box-shadow: unset;
+  min-height: unset;
+}
+.terms-field label {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.submit-button {
+  background-color: rgb(84, 105, 212);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0.12) 0px 1px 1px 0px, 
+              rgb(84, 105, 212) 0px 0px 0px 1px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(0, 0, 0, 0) 0px 0px 0px 0px, 
+              rgba(60, 66, 87, 0.08) 0px 2px 5px 0px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error-box {
+   width: 100%;
+   text-align: center;
+   background: rgb(212, 92, 92);
+   color: #1a1f36;
+   padding: 0.5rem;
+   margin: 1rem 0;
+}
+
+.section-wrapper .list-item,
+.sectors-field-wrapper .list-item {
+  color: #1a1f36;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  color: dodgerblue;
+}
+
+@media screen and ( max-width : 650px ) {
+  .section-wrapper{
+    margin: 0 2rem;
+  }
+  .submit-button {
+    width: 100%;
+  }
+}
+
+
+
+
+

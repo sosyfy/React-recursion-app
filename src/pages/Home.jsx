@@ -1,6 +1,6 @@
 import { useEffect,useState } from "react";
-import Option from "./Option";
-import data from './data.json'
+import Option from "../components/Option";
+import sectionsData from '../assets/data.json'
 import axios from "axios"
 import { useNavigate } from "react-router-dom";
 
@@ -83,7 +83,7 @@ export default function Main(){
           <div className="sectors-field-wrapper">
             <h1 >Sector <strong>*</strong></h1>
             <div className="sectors-field">
-            {data.map(option => (
+            {sectionsData.map(option => (
               <Option option={option} sectors={sectors}  setSectors={setSectors} depth={1} key={option.id + option.label} />
             ))}
             </div>
